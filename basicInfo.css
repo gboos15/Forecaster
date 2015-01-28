@@ -1,0 +1,25 @@
+body
+{
+    background-color: maroon;
+    color: white;
+}
+
+h1
+{
+    font-family: inherit;
+    font-size: 30px;
+    text-decoration: underline;
+}
+img
+{
+    width: 75px;
+    height: 75px;
+}
+.wrapper
+{
+    text-align: center;
+}
+.button
+{
+    position: absolute;
+}
