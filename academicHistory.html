@@ -2,48 +2,161 @@
     
     <head>
     <title> Academic History Page </title>
-    <link type = "text/css" rel = "stylesheet" href = "basicInfo.css"/>
+    <link type = "text/css" rel = "stylesheet" href = "basicInfo.css"/>   
     <script src="forecaster.js"></script>
     </head>
+    
     <body>
-    <h1 align = "center">Academic History</h1>
+    <div class="contain"><div>
+        <br />
+        <h1 class="header" align = "center">Academic History</h1>
        
                 <table border="1px">
             <tr>
-                <th>Class</th>
-                <th>Grade Received</th>
+                <th><h2>Subject</h2></th>
+                <th><h2>Class</h2></th>
+                <th><h2>Grade Received</h2></th>
             </tr>        
             <tr>
-                <td>Period 1</td>
-                <td>Grade</td>     
+                <td>English</td>
+                <td>
+                    <select id="froshEnglish">
+                        <option value="Default">Choose One</option>
+                        <option value="Honors English 9">Honors English 9</option>
+                        <option value="English 9">English 9</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="froshEnglishGrade">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>     
             </tr>
             
             <tr>
-                <td>Period 2</td>
-                <td>Grade</td>
+                <td>Science</td>
+                <td>
+                    <select>
+                    <option value="Biology" id="biology">Biology</option>
+                    </select>
+                </td> 
+                <td>
+                    <select id="biologyGrade">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>
             </tr>
             
             <tr>
-                <td>Period 3</td>
-                <td>Grade</td>
-            </tr>
-               <tr>
-                <td>Period 4</td>
-                <td>Grade</td>     
+                <td>Religion</td>
+               <td>
+                    <select>
+                    <option value="World Cultures">World Cultures</option>
+                    </select>
+                </td> 
+                <td>
+                    <select id="religionGrade">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>
             </tr>
             
             <tr>
-                <td>Period 5</td>
-                <td>Grade</td>
+                <td>Language</td>
+                <td>
+                    <select id="froshLanguage">
+                        <option value="Default">Choose One</option>
+                        <option value="Spanish 1">Spanish 1</option>
+                            <option value="Spanish 2">Spanish 2</option>
+                            <option value="Spanish 3">Spanish 3</option>
+                            <option value="AP Spanish">AP Spanish</option>
+                        <option value="French 1">French 1</option>
+                            <option value="French 2">French 2</option>
+                            <option value="French 3">French 3</option>
+                            <option value="AP French">AP French</option>
+                    </select>
+                </td> 
+                <td>
+                    <select id="languageGrade">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>
+                
             </tr>
             
             <tr>
-                <td>Period 6</td>
-                <td>Grade</td>
+                <td>Math</td>
+                <td>
+                    <select id="froshMath">
+                        <option value="Default">Choose One</option>
+                        <option value="Algebra 1">Algebra 1</option>
+                        <option value="Algebra 2">Algebra 2</option>
+                        <option value=" Honors Algebra 2 w/Trig">Honors Algebra 2 w/Trig</option>
+                        <option value="Geometry">Geometry</option>
+                        <option value="Honors Geometry">Honors Geometry</option>
+                        <option value="Precalculus">Precalculus</option>
+                    </select>
+                </td> 
+                <td>
+                    <select id="froshMathGrade">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>
             </tr>
         </table>
+        
+        <h2>What is your favorite subject?</h2>
+            <p>
+            <select id="favSubject">
+                <option value="Default">Choose One</option>    
+                <option value="English">English</option>
+                <option value="Science">Science</option>    
+                <option value="Religion">Religion</option>
+                <option value="Language">Language</option>
+                <option value="Math">Math</option> 
+                <option value="PE/Health">PE/Health</option>    
+            </select>
+            </p>
+        <h2>What is your LEAST favorite subject?</h2>
+            <p>
+            <select id="leastFavSubject">
+                <option value="Default">Choose One</option>    
+                <option value="English">English</option>
+                <option value="Science">Science</option>    
+                <option value="Religion">Relgion</option>
+                <option value="Language">Language</option>
+                <option value="Math">Math</option> 
+                <option value="PE/Health">PE/Health</option>    
+            </select>
+            </p>
+            <br />
         <div class="wrapper">
-            <button onclick="next()">Continue</button></div>
+            <button onclick="interests()">Continue</button></div>
+        <br /><br /><br />
+        <br /><br /><br />
+        <br /><br /><br />
+        <br /><br /><br />
+        </div></div>
 
     </body>
     
