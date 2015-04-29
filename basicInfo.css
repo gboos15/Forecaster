@@ -1,19 +1,27 @@
 body
 {
-    background-color: maroon;
-    color: white;
+    background-color: #F0F5F5;
+    color: white;    
 }
 
 h1
 {
     font-family: inherit;
-    font-size: 30px;
-    text-decoration: underline;
+    font-size: 40px;
+    text-decoration: bold;
+}
+td
+{
+    font-size: 18px;
+}
+tr
+{
+    font-size: 18px;
 }
 img
 {
-    width: 75px;
-    height: 75px;
+    width: 130px;
+    height: 125px;
 }
 .wrapper
 {
@@ -22,4 +30,30 @@ img
 .button
 {
     position: absolute;
+}
+.interest:hover
+{
+    -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+.contain{
+    padding: 20px;
+    width: 80%;
+    background-color: #A31919;
+      margin-right: auto;
+    margin-left: auto;
+    
+}
+.header{
+    font-color: gray;   
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
