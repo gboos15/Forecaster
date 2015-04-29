@@ -1,19 +1,61 @@
+<!DOCTYPE html>
 <html>
     
     <head>
     <title> Basic Info Page </title>
-    <link type = "text/css" rel = "stylesheet" href = "basicInfo.css"/>
+        <link type = "text/css" rel = "stylesheet" href = "basicInfo.css"> 
     <script src="forecaster.js"></script>
     </head>
+    
     <body>
-    <h1 align = "center">Basic Info</h1>
-        <p> Name: </p>
-        <p> Gender:</p>
-        <p> Grade Level: </p>
-        <p> Email: </p>
+    <div class="contain"><div>
+        <br />
+        <h1 class="header" align= "center">Basic Information</h1>
+            <form action="demo_form.asp">
+                <h2>First Name:</h2> <input type="text" name="fname" id="firstName"><br>
+                <h2>Last Name:</h2> <input type="text" name="lname" id="lastName"><br>
+            </form>
+        
+        <h2>Grade:</h2>
+            <select id = "grade">
+                <option value="Default">Choose One</option>
+                <option value="Freshman">Freshman</option>
+                <option value="Sophomore" >Sophomore</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+            </select>
+        
+        
+        <h2>Do you play any sports?</h2>
+            <select id ="sports">
+                <option value="Default">Choose One</option>
+                <option value="Yes1">Yes, 1 season</option>
+                <option value="Yes2">Yes, 2 seasons</option>
+                <option value="Yes3">Yes, all 3 seasons</option>
+                <option value="No">None</option>
+            </select>
+        
+        <h2>Do you enjoy reading?</h2>
+            <select id="reading">
+                <option value="Default">Choose One</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        
+        <h2>On average how much time do you spend on homework (hours)?</h2>
+            <input id="homework" type="range" min="0" max="6" value="0" step="1" onchange="showValue(this.value)" />
+            <span id="range">0</span>
+            <script type="text/javascript">
+                function showValue(newValue)
+                {
+                    document.getElementById("range").innerHTML=newValue;
+                }
+            </script>
+       
         <div class="wrapper">
-            <button onclick="nextPage()">Continue</button></div>
-
+            <button align = "center" onclick="academicHistory()">Continue</button></div>
+        
+        </div></div>
     </body>
     
     </html>
